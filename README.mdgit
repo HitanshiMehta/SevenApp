@@ -1,0 +1,1 @@
+"# ReactTest"  initgit add README.mdgit commit -m "first commit"git remote add origin https://github.com/HitanshiMehta/ReactTest.gitgit push -u origin master                
