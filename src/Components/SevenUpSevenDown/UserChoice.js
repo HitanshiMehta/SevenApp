@@ -1,5 +1,4 @@
 import React from "react"
-import styles from "../../Style/HomeStyle.module.css"
 
 class UserChoice extends React.Component {
     constructor(props) {
@@ -11,9 +10,25 @@ class UserChoice extends React.Component {
     render() {
         return (
             <>
-                <button className={styles.btn}>7 DOWN</button>
-                <button className={styles.btn}>7</button>
-                <button className={styles.btn}>7 Up</button>
+                <button >
+                    <span >
+                        <div ></div>
+                        <div ></div>
+                    </span>
+                </button>
+                <button >
+                    <span>
+                        <div ></div>
+                        <div ></div>
+                    </span>
+                </button>
+                <button >
+                    <span>
+                        <div ></div>
+                        <div ></div>
+                    </span>
+                </button>
+
             </>
         )
     }
