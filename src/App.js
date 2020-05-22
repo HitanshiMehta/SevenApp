@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Home from './Components/Home';
+import Home from './Components/SevenUpSevenDown/Home';
 
 function App() {
   return (
