@@ -1,0 +1,42 @@
+.containerClass {
+  background: linear-gradient( #fabc9b,#a8415e);
+  /* background: linear-gradient(#010741,  #015fb1); */
+  height: 100vh;
+  overflow: scroll;
+}
+.homeHeader {
+  color:rgb(248, 245, 247);
+  font-size: 70px;
+  padding: 5px;
+  font-family:  Bahnschrift SemiBold;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.content{
+  color: rgb(246, 250, 247);
+  font-size: 20px;
+  padding: 5px;
+  font-family: Rockwell;
+}
+.startGame{
+  color: rgb(246, 248, 250);
+  font-size: 50px;
+  padding: 5px;
+  margin-top: 15px;
+  font-family: Blackadder ITC;
+}
+.button {
+  max-width: 150px;
+  width: 100%;
+  max-height: 45px;
+  height: 100%;
+  border: 1px solid#61a6ff;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Century Gothic Black;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  color: #348afa;
+  background-color:#fffefe;
+  margin-top: 20px;
+}

@@ -1,0 +1,13 @@
+.containerClass {
+  background: linear-gradient(#eecda3, #fda9cd);
+  height: 100vh;
+  overflow: hidden;
+}
+.menuItem{
+    background: linear-gradient(#ffffff, #ffd194);
+    font-size: 40px;
+    font-style: italic;
+    font-family: Buxton Sketch;
+    height: 100px;
+    width: 300px;
+}

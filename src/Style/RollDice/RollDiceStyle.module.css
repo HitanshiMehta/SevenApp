@@ -1,0 +1,29 @@
+.containerClass {
+  background: linear-gradient(#81f6c9, #a3bbff, #7c7c7c);
+  /* background: linear-gradient(#EECDA3, #EF629F); */
+  /* background: linear-gradient(#CFDEF3, #E0EAFC); */
+  /* #64b3f4,#c2e59c */
+  /* #304352,#d7d2cc*/
+  height: 100vh;
+  overflow: scroll;
+}
+.dice {
+  align-items: center;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 20rem));
+  grid-template-rows: auto;
+  justify-items: center;
+  padding: 2rem;
+  perspective: 600px;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+.resultSpan {
+  color: white;
+  font-size: 35px;
+  margin: 5px;
+  padding: 5px;
+  font-family: Algerian;
+  font-weight: 600;
+}

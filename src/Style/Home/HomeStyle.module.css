@@ -1,0 +1,198 @@
+.containerClass {
+  /* background: linear-gradient(#3f93a0, #b4dbe2); */
+  background: linear-gradient(#b4dbe2, #3f93a0);
+  height: 100vh;
+  overflow: scroll;
+}
+.btn {
+  width: 100px;
+  height: 150px;
+  position: relative;
+  cursor: pointer;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border-color: #0c284b;
+
+  margin-right: 20px;
+  margin-top: 35px;
+  margin-bottom: 45px;
+
+  background-color: #0c284b;
+  display: inline-block;
+  vertical-align: top;
+
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+
+  -webkit-transition: -webkit-box-shadow 0.2s, background-color 0.2s;
+  -moz-transition: -moz-box-shadow 0.2s, background-color 0.2s;
+  -ms-transition: -ms-box-shadow 0.2s, background-color 0.2s;
+  transition: box-shadow 0.5s, background-color 0.2s;
+}
+.btn span {
+  width: 100px;
+  height: 145px;
+  line-height: 50px;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-transform: translate3d(0, -8px, 0);
+  -moz-transform: translate3d(0, -8px, 0);
+  -ms-transform: translate3d(0, -8px, 0);
+  transform: translate3d(0, -8px, 0);
+
+  background-color: #1b406b;
+
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.2s, color 0.2s,
+    font-size 0.2s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.2s, color 0.2s,
+    font-size 0.2s;
+  -ms-transition: -ms-transform 0.2s, background-color 0.2s, color 0.2s,
+    font-size 0.2s;
+  transition: transform 0.2s, background-color 0.2s, color 0.2s, font-size 0.2s;
+
+  display: inline-block;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+  font-family: Rockwell Extra Bold;
+  text-shadow: 0 1px 0 #0c284b;
+  word-spacing: 99px;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.25);
+  background-color: #0c284b;
+}
+.btn:hover span {
+  -webkit-transform: translate3d(0, -5px, 0);
+  -moz-transform: translate3d(0, -5px, 0);
+  -ms-transform: translate3d(0, -5px, 0);
+  transform: translate3d(0, -5px, 0);
+}
+
+.btn:active {
+  -webkit-box-shadow: 0px 0 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0 20px 0px rgba(0, 0, 0, 0.1);
+}
+.btn:active span {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  font-size: 26px;
+}
+
+.button {
+  background-color: #424242;
+  border: 2px solid #4c4c4d;
+  border-radius: 20px;
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-size: 17px;
+  font-family: Rockwell;
+}
+
+.indexImg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.topLeft {
+  color: white;
+  position: absolute;
+  font-size: 150px;
+  font-weight: 700;
+  top: 8px;
+  right: 1050px;
+  word-spacing: 9999px;
+  text-align: center;
+  padding: 10;
+  font-family: Algerian;
+}
+
+.bottomRight {
+  font-size: 150px;
+  font-weight: 700;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  bottom: 2px;
+  left: 750px;
+  word-spacing: 9999px;
+  text-align: center;
+  font-family: Algerian;
+}
+.homeHeader {
+  color: rgb(112, 111, 111);
+  font-size: 50px;
+  padding: 5px;
+  font-family: Algerian;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.coinHeader {
+  color: rgb(102, 102, 102);
+  font-size: 23px;
+  font-family: Rockwell;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.headerInfo {
+  color: rgb(109, 109, 109);
+  font-size: 21px;
+  font-weight: bold;
+  font-family: Bahnschrift SemiBold;
+  margin-left: 40px;
+}
+.headerButton {
+  background-color: #7c7b7b;
+  border-color: #8d8d8d;
+  color: white;
+  font-weight: bold;
+  font-family: Rockwell;
+  font-size: 17px;
+}
+
+.priceImg {
+  position: absolute;
+  right: 15px;
+  height: 35px;
+  width: 60px;
+  top: 125px;
+  background-color: #0c284b;
+  border-radius: 30%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.amount {
+  padding: 8px 10px;
+  margin: 3px 0;
+  display: inline-block;
+  border: 1px solid #525252;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 22px;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+.containerClass {
+    /* background: linear-gradient(#DBD5A4, #649173); */
+    background: linear-gradient(#aee6cb, #5D4157);
+    height: 100vh;
+    overflow: hidden;
+}
+.title{
+  font-size: 80px;
+  font-family: Forte;
+  color: #55374e;
+}
+.win{
+  font-size: 80px;
+  font-family: Algerian;
+  color: #eeb63d;
+}
+.lose{
+  font-size: 80px;
+  font-family: Algerian;
+  color: #eeb63d;
+}

@@ -1,0 +1,57 @@
+.containerClass {
+  background: linear-gradient(#f5cbab, #ffc371);
+  height: 100vh;
+  overflow: scroll;
+}
+.loginImg {
+  width: 100%;
+  max-width: 500px;
+  height: 510px;
+}
+.login {
+  margin-top: 50px;
+}
+.loginHeader {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  font-family: Bahnschrift SemiBold;
+  color: #535353;
+  margin-top: 40px;
+}
+.regHeader {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: Bahnschrift SemiBold;
+  color: #535353;
+}
+.inputStyle {
+  padding: 10px 20px;
+  margin: 3px 0;
+  border-radius: 7px;
+}
+.btnLink {
+  background-color: white;
+  border: white;
+  color: blue;
+  font-size: 16px;
+}
+.newAccount {
+  font-size: 16px;
+  color: #2c2c2c;
+}
+.button {
+  max-width: 150px;
+  width: 100%;
+  max-height: 45px;
+  height: 100%;
+  border: 1px solid#525252;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: Cooper Black;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  color: white;
+  background-color: #525252;
+}
