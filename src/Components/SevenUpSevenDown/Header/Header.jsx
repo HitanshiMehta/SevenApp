@@ -10,6 +10,7 @@ import {
 } from "../../../Common/AppConfig.jsx";
 import styles from "../../../Style/Home/HomeStyle.module.css";
 
+// Component Hierarchy (Home->Header)
 class Header extends Component {
   constructor(props) {
     super(props);

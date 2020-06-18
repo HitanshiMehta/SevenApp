@@ -16,6 +16,7 @@ import {
 import styles from "../../../Style/Score/HistoryStyle.module.css";
 import Header from "../Header/Header.jsx";
 
+// Component Hierarchy (Menu->History)
 class History extends Component {
   constructor(props) {
     super(props);

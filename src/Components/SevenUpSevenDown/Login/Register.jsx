@@ -16,6 +16,7 @@ import {
 import styles from "../../../Style/Login/LoginStyle.module.css";
 import { post_api } from "../../../Common/APICommunication.jsx";
 
+// Component Hierarchy (Introduction->LoginIndex->Register)
 class Register extends Component {
   constructor(props) {
     super(props);

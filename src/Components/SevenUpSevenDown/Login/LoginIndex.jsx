@@ -11,6 +11,7 @@ const gridStyle = {
   padding: 0,
 };
 
+// Component Hierarchy (Introduction->LoginIndex)
 class LoginIndex extends Component {
   constructor(props) {
     super(props);

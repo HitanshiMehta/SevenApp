@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styles from "../../../Style/RollDice/DiceStyle.module.css";
 
+// Component Hierarchy (Home->RollDice->Dice)
 class Dice extends Component {
   constructor(props) {
     super(props);

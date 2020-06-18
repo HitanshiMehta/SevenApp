@@ -6,6 +6,7 @@ import styles from "../../../Style/Introduction/Introduction.module.css";
 import { app, common, introduction } from "../../../Common/AppConfig.jsx";
 import Header from "../Header/Header";
 
+// Component Hierarchy (Index->Introduction)
 class Introduction extends Component {
   constructor(props) {
     super(props);

@@ -27,9 +27,6 @@ function App() {
         <Route path={app.menu} component={Menu} />
         <Route path={app.history} component={History} />
         <Route path={app.luck} component={Luck} />
-        {/* <Redirect to={app.luck} /> */}
-        {/* <Redirect to={app.home} /> */}
-        {/* <Redirect to={app.introduction} /> */}
         {localStorage.getItem(localStorageVariableName.userName) == null ? <Redirect to={app.index} /> : <Redirect to={app.home} />}
       </BrowserRouter>
     </>

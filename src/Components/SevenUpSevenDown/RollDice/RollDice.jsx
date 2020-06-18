@@ -21,6 +21,7 @@ import {
   update_api_without_pk_without_action,
 } from "../../../Common/APICommunication.jsx";
 
+// Component Hierarchy (Home->RollDice)
 class RollDice extends Component {
   _isMounted = false;
   constructor(props) {

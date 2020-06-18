@@ -16,6 +16,8 @@ import {
 } from "../../../Common/AppConfig.jsx";
 import styles from "../../../Style/Home/HomeStyle.module.css";
 
+// Component hierarchy (Home-> Header && Title && UserChoice->UserInputButton
+// && Amount && Result)
 class Home extends React.Component {
   constructor(props) {
     super(props);

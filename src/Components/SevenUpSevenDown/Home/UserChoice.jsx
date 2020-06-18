@@ -3,6 +3,7 @@ import React from "react";
 import UserInputButton from "./UserInpuButton";
 import { common } from "../../../Common/AppConfig.jsx";
 
+// Component Hierarchy (Home->UserChoice)
 class UserChoice extends React.Component {
   constructor(props) {
     super(props);

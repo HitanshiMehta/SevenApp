@@ -4,6 +4,7 @@ import { Redirect } from "react-router-dom";
 import styles from "../../../Style/Home/HomeStyle.module.css";
 import { app, index, common } from "../../../Common/AppConfig.jsx";
 
+// First Page
 class Index extends React.Component {
   constructor(props) {
     super(props);

@@ -7,6 +7,7 @@ const max = 6;
 const min = 1;
 
 // Generate random number
+// Component Hierarchy (Home->Result)
 class Result extends React.Component {
   constructor(props) {
     super(props);

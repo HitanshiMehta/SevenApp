@@ -13,6 +13,7 @@ import styles from "../../../Style/Score/LuckStyle.module.css";
 import Header from "../Header/Header";
 import { get_api } from "../../../Common/APICommunication.jsx";
 
+// Component Hierarchy (Menu->Luck)
 class Luck extends Component {
   constructor(props) {
     super(props);

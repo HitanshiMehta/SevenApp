@@ -17,6 +17,7 @@ import {
 import styles from "../../../Style/Login/LoginStyle.module.css";
 import { get_api } from "../../../Common/APICommunication.jsx";
 
+// Component Hierarchy (Introduction->LoginIndex->Login)
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -34,6 +35,7 @@ class Login extends Component {
         if (typeof loginRequest === "string") {
           message.error(loginRequest);
         } else {
+          console.log(loginRequest);
           localStorage.setItem(
             localStorageVariableName.userId,
             loginRequest.id
