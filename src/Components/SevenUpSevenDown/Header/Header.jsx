@@ -14,19 +14,23 @@ import styles from "../../../Style/Home/HomeStyle.module.css";
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.logout = new Audio("/Assets/logout.mp3");
+    this.menu = new Audio("/Assets/menu.mp3");
   }
   handleMenuClick = () => {
+    this.menu.play();
     this.props.history.push({
       pathname: app.menu,
     });
   };
   handleHomeClick = () => {
+    this.menu.play();
     this.props.history.push({
       pathname: app.home,
     });
   };
   handleLogout = () => {
+    this.logout.play();
     localStorage.removeItem(localStorageVariableName.userId);
     localStorage.removeItem(localStorageVariableName.userName);
     localStorage.removeItem(localStorageVariableName.coins);

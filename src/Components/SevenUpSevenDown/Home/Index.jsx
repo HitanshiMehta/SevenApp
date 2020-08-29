@@ -9,9 +9,11 @@ class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = { redirect: false };
+    this.index = new Audio("/Assets/index1.mp3");
   }
   // Display first image for 2000 ms
   componentDidMount() {
+    this.index.play();
     this.timer = setTimeout(() => this.setState({ redirect: true }), 3000);
   }
   componentWillUnmount() {

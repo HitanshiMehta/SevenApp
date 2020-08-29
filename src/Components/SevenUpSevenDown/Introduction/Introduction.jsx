@@ -6,13 +6,17 @@ import styles from "../../../Style/Introduction/Introduction.module.css";
 import { app, common, introduction } from "../../../Common/AppConfig.jsx";
 import Header from "../Header/Header";
 
-// Component Hierarchy (Index->Introduction)
+// Component Hierarchy (Index->Introduction )
 class Introduction extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.login = new Audio("/Assets/login.mp3");
+    this.home = new Audio("/Assets/play.mp3");
   }
   handleLoginClick = () => {
+    this.login.play();
+
     this.props.history.push({
       pathname: app.login,
       state: {
@@ -22,6 +26,7 @@ class Introduction extends Component {
     });
   };
   handleRegisterClick = () => {
+    this.login.play();
     this.props.history.push({
       pathname: app.login,
       state: {
@@ -31,6 +36,7 @@ class Introduction extends Component {
     });
   };
   handleHomeClick = () => {
+    this.home.play();
     this.props.history.push({
       pathname: app.home,
     });

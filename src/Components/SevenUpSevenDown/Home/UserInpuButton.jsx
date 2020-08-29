@@ -5,7 +5,12 @@ import styles from "../../../Style/Home/HomeStyle.module.css";
 
 // Component Hierarchy (Home->UserChoice->UserInputButton)
 class UserInputButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.userInputButton = new Audio("/Assets/userInputButton.mp3");
+  }
   userClick = (e) => {
+    this.userInputButton.play();
     // changin background color(to original) of other component
     // on selection of current component
     if (this.props.sevenDownRef !== undefined) {

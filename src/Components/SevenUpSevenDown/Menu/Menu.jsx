@@ -9,9 +9,12 @@ import Header from "../Header/Header.jsx";
 class Menu extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.luck = new Audio("/Assets/luck.mp3");
+    this.history = new Audio("/Assets/history.mp3");
+    this.rule = new Audio("/Assets/rule.mp3");
   }
-  handleGameClick = () => {
+  handleRuleClick = () => {
+    this.rule.play();
     this.props.history.push({
       pathname: app.introduction,
       state: {
@@ -20,11 +23,13 @@ class Menu extends Component {
     });
   };
   handleHistoryClick = () => {
+    this.history.play();
     this.props.history.push({
       pathname: app.history,
     });
   };
   handleLuckClick = () => {
+    this.luck.play();
     this.props.history.push({
       pathname: app.luck,
     });
@@ -52,7 +57,7 @@ class Menu extends Component {
         </Row>
         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
           <Col style={{ marginTop: 20 }} offset={10}>
-            <Button className={styles.menuItem} onClick={this.handleGameClick}>
+            <Button className={styles.menuItem} onClick={this.handleRuleClick}>
               {menu.rules}
             </Button>
           </Col>

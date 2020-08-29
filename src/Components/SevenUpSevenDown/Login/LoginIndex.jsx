@@ -23,14 +23,17 @@ class LoginIndex extends Component {
         display: this.props.location.state.register,
       },
     };
+    this.switch = new Audio("/Assets/switch.mp3");
   }
   displayRegister = () => {
+    this.switch.play();
     this.setState({
       loginStyle: { display: loginIndex.none },
       regStyle: { display: loginIndex.block },
     });
   };
   displayLogin = () => {
+    this.switch.play();
     this.setState({
       loginStyle: { display: loginIndex.block },
       regStyle: { display: loginIndex.none },

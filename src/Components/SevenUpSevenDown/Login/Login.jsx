@@ -24,8 +24,11 @@ class Login extends Component {
     this.state = {
       loginRequest: [],
     };
+    this.loginType = new Audio("/Assets/play.mp3");
+    this.loginButton = new Audio("/Assets/loginButton.mp3");
   }
   onFinish = (values) => {
+    this.loginButton.play()
     get_api(
       `http://${MASTER_DATA_SERVER.SERVER_URL}:${MASTER_DATA_SERVER.PORT}/${APP_NAME.sevenApp}/${MODEL.user}?${PARAMETER.username}=${values.username}&${PARAMETER.password}=${values.password}`
     )
@@ -64,6 +67,11 @@ class Login extends Component {
     this.props.onNewAccountClick();
   };
 
+  handleChange = () => {
+    this.loginType.play();
+    this.switch = new Audio("/Assets/switch.mp3");
+  };
+
   render() {
     return (
       <div style={this.props.loginStyle}>
@@ -83,7 +91,7 @@ class Login extends Component {
               },
             ]}
           >
-            <Input className={styles.inputStyle} />
+            <Input className={styles.inputStyle} onChange={this.handleChange} />
           </Form.Item>
 
           <Form.Item
@@ -95,7 +103,10 @@ class Login extends Component {
               },
             ]}
           >
-            <Input.Password className={styles.inputStyle} />
+            <Input.Password
+              className={styles.inputStyle}
+              onChange={this.handleChange}
+            />
           </Form.Item>
 
           <Form.Item {...tailLayout}>

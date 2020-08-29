@@ -20,9 +20,11 @@ import { post_api } from "../../../Common/APICommunication.jsx";
 class Register extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.loginType = new Audio("/Assets/play.mp3");
+    this.loginButton = new Audio("/Assets/loginButton.mp3");
   }
   onFinish = (values) => {
+    this.loginButton.play()
     // password and re-enter password validation
     if (values.password !== values.re_password) {
       message.error(register.passwordNotMatch);
@@ -80,6 +82,9 @@ class Register extends Component {
   onRedirectToLoginClick = () => {
     this.props.onRedirectToLoginClick();
   };
+  handleChange = () => {
+    this.loginType.play();
+  };
 
   render() {
     return (
@@ -101,7 +106,7 @@ class Register extends Component {
               },
             ]}
           >
-            <Input className={styles.inputStyle} />
+            <Input className={styles.inputStyle} onChange={this.handleChange} />
           </Form.Item>
 
           <Form.Item
@@ -114,7 +119,7 @@ class Register extends Component {
               },
             ]}
           >
-            <Input className={styles.inputStyle} />
+            <Input className={styles.inputStyle} onChange={this.handleChange} />
           </Form.Item>
 
           <Form.Item
@@ -126,7 +131,10 @@ class Register extends Component {
               },
             ]}
           >
-            <Input.Password className={styles.inputStyle} />
+            <Input.Password
+              className={styles.inputStyle}
+              onChange={this.handleChange}
+            />
           </Form.Item>
 
           <Form.Item
@@ -138,7 +146,10 @@ class Register extends Component {
               },
             ]}
           >
-            <Input.Password className={styles.inputStyle} />
+            <Input.Password
+              className={styles.inputStyle}
+              onChange={this.handleChange}
+            />
           </Form.Item>
 
           <Form.Item {...tailLayout}>

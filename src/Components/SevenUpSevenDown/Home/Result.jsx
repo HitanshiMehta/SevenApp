@@ -15,8 +15,10 @@ class Result extends React.Component {
       diceOne: null,
       diceTwo: null,
     };
+    this.result = new Audio("/Assets/result.mp3");
   }
   handleRollDice = () => {
+    this.result.play()
     const randomOne = Math.floor(Math.random() * (max - min + 1)) + min;
     const randomTwo = Math.floor(Math.random() * (max - min + 1)) + min;
 

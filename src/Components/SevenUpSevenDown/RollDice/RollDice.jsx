@@ -32,6 +32,10 @@ class RollDice extends Component {
     // Reference to dice will allow to assign random numbers.
     this.evenRoll = React.createRef();
     this.oddRoll = React.createRef();
+
+    this.fail = new Audio("/Assets/fail.mp3");
+    this.success = new Audio("Assets/success.mp3");
+    this.tryAgain = new Audio("/Assets/tryAgain.mp3");
   }
   componentDidMount() {
     this._isMounted = true;
@@ -103,6 +107,11 @@ class RollDice extends Component {
           this.setState({
             show: true,
           });
+          if (result === "Win") {
+            this.success.play();
+          } else {
+            this.fail.play();
+          }
         }.bind(this),
         5300
       );
@@ -147,7 +156,9 @@ class RollDice extends Component {
                 <br />
                 {result ? `You Won rs.${winningPrice}` : rollDice.youLose}
                 <br />
-                <Link to={app.home} style={{color:"#3b3b3b"}}>{rollDice.tryAgain}</Link>
+                <Link to={app.home} style={{ color: "#3b3b3b" }}>
+                  {rollDice.tryAgain}
+                </Link>
               </div>
             )}
           </Col>

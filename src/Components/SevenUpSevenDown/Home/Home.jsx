@@ -12,7 +12,7 @@ import {
   app,
   localStorageVariableName,
   home,
-  common
+  common,
 } from "../../../Common/AppConfig.jsx";
 import styles from "../../../Style/Home/HomeStyle.module.css";
 
@@ -42,13 +42,8 @@ class Home extends React.Component {
     // Error message before redirecting to roll dice page
     // (Redirecting to roll dice page on setState of diceResult)
 
-    // betting coins are greater than remining coins
-    if (amount > localStorage.getItem(localStorageVariableName.coins)) {
-      message.error(`Hey, you don't have ${amount} coins!`);
-    }
-
     // betting option is not selected (7, 7 dwon or 7 up)
-    else if (userChoice === 0) {
+    if (userChoice === 0) {
       message.error(home.optionMessage);
     }
 
@@ -85,9 +80,9 @@ class Home extends React.Component {
 
       // For database
       if (userChoice === 7) {
-        this.setState({ userChoice:common.seven  });
+        this.setState({ userChoice: common.seven });
       } else if (userChoice === 8) {
-        this.setState({ userChoice:common.sevenUp });
+        this.setState({ userChoice: common.sevenUp });
       } else {
         this.setState({ userChoice: common.sevenDown });
       }
